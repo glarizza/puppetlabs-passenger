@@ -105,6 +105,9 @@ class passenger (
         mode    => '0644',
       }
     }
+    'darwin': {
+      # Darwin is supported, however additional resources aren't currently specified
+    }
     default:{
       fail("Operating system ${::operatingsystem} is not supported with the Passenger module")
     }
